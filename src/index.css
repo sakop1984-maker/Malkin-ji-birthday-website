@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#090014;
+  color:white;
+  overflow-x:hidden;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.gradient-bg{
+  background:linear-gradient(
+    135deg,
+    #ff9acb,
+    #9b5cff,
+    #090014
+  );
+
+  background-size:300% 300%;
+  animation:gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
